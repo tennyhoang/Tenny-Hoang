@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự án — Tenny Hoang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-name">tenny</span>
+        <span class="logo-dot">.</span>java
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-num="01"><span class="nav-text">Trang chủ</span></a></li>
+        <li><a href="index.html#about" data-num="02"><span class="nav-text">Giới thiệu</span></a></li>
+        <li><a href="index.html#skills" data-num="03"><span class="nav-text">Kỹ năng</span></a></li>
+        <li><a href="projects.html" class="active" data-num="04"><span class="nav-text">Dự án</span></a></li>
+        <li><a href="index.html#contact" data-num="05"><span class="nav-text">Liên hệ</span></a></li>
+        <li><button id="theme-toggle" title="Đổi giao diện"><i class="fas fa-sun"></i></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Header ── -->
+  <section class="section" style="padding-top: 140px; padding-bottom: 40px;">
+    <div class="container">
+      <div class="section-label">04 / dự án</div>
+      <h2 class="section-title">Dự Án Nổi Bật</h2>
+      <div class="section-divider"></div>
+      <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); max-width: 560px; line-height: 1.8;">
+        Các dự án tôi đã xây dựng — tập trung vào backend logic, kiến trúc sạch và tương tác database thực tế. Mỗi project là một bài học.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Projects Grid ── -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ── Modal ── -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <button class="close-modal" title="Đóng">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container">
+      <p>© 2025 <span>Hoàng Anh Tuấn</span>. <a href="index.html">← Về trang chủ</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
